@@ -53,7 +53,7 @@
 * Object keypoints
 * Applications: sports analysis, gesture recognition, robotics
 
-## 4. OCR & Document Vision, Sep 24
+## 4. OCR & Document Vision, Sep 24th
 
 *Question: “What does the image say?”*
 
@@ -78,7 +78,7 @@
 
 <!-- This could culminate in a small experiment where students use different lenses/cameras and observe how **field of view, resolution and distance affect detection**. -->
 
-## 6. Multimodal AI, 8th/15th
+## 6. Multimodal AI, Oct 8th/15th
 
 We make the transition from *computer vision models* to *models that reason about images and language*.
 
