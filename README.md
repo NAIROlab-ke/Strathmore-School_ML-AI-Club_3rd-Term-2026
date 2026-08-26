@@ -1,6 +1,6 @@
 <div align="center">
 <h1>Activities for Term 3, 2026</h1>
-<img width="1136" height="574" alt="nairolab-github-banner-cropped" src="https://github.com/NAIROlab-ke/Strathmore-School-ML-AI-Club_Term-2_2026/blob/main/nairolab-github-banner-cropped.png" />
+<img width="1136" height="574" alt="nairolab-github-banner-cropped" src="https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/nairolab-github-banner-cropped.png" />
 </div>
 
 ## **Theme: Exploring AI Computer Vision**
