@@ -63,19 +63,21 @@
 * Practical OCR pipeline
 * Introduction to vision-language models for document understanding
 
-## 5. Computer Vision with Raspberry Pi Cameras, Oct 1st
+## 5. Computer Vision with Raspberry Pi-based H/W for edge AI, Oct 1st
 
-**A hardware-focused session/lab: Camera → image → CV model → result**
+**A hardware-focused session**
 
-* Standard Raspberry Pi Camera
-* Wide-angle camera
-* HQ Camera
-  * 6 mm vs. 16 mm lenses
-  * Field of view
-  * Working distance
-  * Perspective
-* Raspberry Pi AI Camera
-
+* Cameras
+  * Standard Raspberry Pi Camera
+  * Wide-angle camera
+  * HQ Camera
+    * 6 mm vs. 16 mm lenses
+    * Field of view
+    * Working distance
+    * Perspective
+  * IMX500 Intelligent Vision Sensor (Pi AI Camera)
+* AI Accelerators
+  * HAILO-8 (Pi AI HAT+) 
 <!-- This could culminate in a small experiment where students use different lenses/cameras and observe how **field of view, resolution and distance affect detection**. -->
 
 ## 6. Multimodal AI, Oct 8th/15th
