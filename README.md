@@ -5,14 +5,13 @@
 
 ## **Theme: Exploring AI Computer Vision**
 
-**From Object Detection to Modern Computer Vision**
+### **From Object Detection to Modern Computer Vision**
 
-Term 2 provided a **pragmatic jump-start into AI Computer Vision** through a highly practical problem: *detecting and locating multiple object classes in real-world images and video*. This provided a foundation for applications ranging from security and sports perception to object counting and automated inspection. The goal was to:
+* Term 2 delivered a **pragmatic jump-start into AI Computer Vision** through a highly practical problem: *detecting and locating multiple object classes in real-world images and video*. This provided a foundation for applications ranging from security and sports perception to object counting and automated inspection. The goal was to:
+  * **Learn the core concepts behind Deep Learning for Computer Vision:** dataset collection and evaluation, annotation, preprocessing and augmentation, training and validation, transfer learning, hyperparameters, model performance, and compute resources.
+  * **Establish a generic CV workflow:** using **Roboflow, Ultralytics YOLO and Google Colab** to move from dataset to trained model and inference.
 
-* **Learn the core concepts behind Deep Learning for Computer Vision:** dataset collection and evaluation, annotation, preprocessing and augmentation, training and validation, transfer learning, hyperparameters, model performance, and compute resources.
-* **Establish a practical CV workflow:** using **Roboflow, Ultralytics YOLO and Google Colab** to move from dataset to trained model and inference.
-
-**Term 3 builds on this foundation by expanding our view of what AI can do with visual information.** Having established the basic workflow, we now explore a broader spectrum of Computer Vision tasks: **classification, semantic and instance segmentation, keypoint detection and OCR**, before moving into more advanced **vision-language and multimodal AI**. Models such as **CLIP/SigLIP, Grounding DINO and SAM** allow us to move beyond predefined object classes toward **searching by meaning, locating objects described in natural language, and segmenting arbitrary objects**. The goal is not simply to learn more models, but to understand **the different questions we can ask of visual data—and the different AI techniques used to answer them.**
+* **Term 3 builds on this foundation by expanding our view of what AI can do with visual information.** Having established the basic workflow, we now explore a broader spectrum of Computer Vision tasks: **classification, semantic and instance segmentation, keypoint detection and OCR**, before moving into more advanced **vision-language and multimodal AI**. Models such as **CLIP/SigLIP, Grounding DINO and SAM** allow us to move beyond predefined object classes toward **searching by meaning, locating objects described in natural language, and segmenting arbitrary objects**. The goal is not simply to learn more models, but to understand **the different questions we can ask of visual data—and the different AI techniques used to answer them.**
 
 * **TL;DR**:
   * **Classification** → What is this?
