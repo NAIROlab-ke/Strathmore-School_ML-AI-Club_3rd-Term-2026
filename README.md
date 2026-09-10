@@ -43,6 +43,8 @@
 * Detection vs. segmentation
 * Practical applications: roads, vegetation, people, medical imagery, etc.
 
+*Lab Session*
+
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1844HJtpYUObB45RRW1kV07nTqo0168Q-?usp=drive_link)
 - [**Training Dataset**](https://drive.google.com/file/d/1uKOIGeZ6PFYxYi8EhcTEtEzhnlm60L6O/view?usp=drive_link)
 - [**Inference test video**](https://drive.google.com/file/d/1-i0-HCXRVXVYQfk8T2LEo5Qb2AZBEgVc/view?usp=drive_link)
