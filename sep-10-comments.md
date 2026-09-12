@@ -75,47 +75,40 @@ Because we are performing segmentation, each prediction has both a **bounding bo
 
 - `metrics/precision(B)` and `metrics/precision(M)`: Asks the question *"Of all the objects YOLO said were objects, how many were actually correct according to the B or M criterion?"*
 
-  Mathematically, 
+	Mathematically, 
 
-  $$
-  Precision = \frac{TP}{TP+FP}
-  $$
+	$$Precision = \frac{TP}{TP+FP}$$
 
-  where:
+	where:
 
-  * TP = true positives
-  * FP = false positives
+	* TP = true positives
+	* FP = false positives
+	
+	Suppose YOLO makes 100 detections:
+	
+	```text
+	90 correct
+	10 incorrect
+	```
+	
+	Then:
+	
+	$$Precision = \frac{90}{100}=0.90$$
 
-  Suppose YOLO makes 100 detections:
-
-  ```text
-  90 correct
-  10 incorrect
-  ```
-
-  Then:
-
-  $$
-  Precision = \frac{90}{100}=0.90
-  $$
-
-  So **90% precision**.
+	So **90% precision**.
 
 - `metrics/recall(B)` / `metrics/recall(M)`: Asks the opposite question *"Of all the objects that actually exist, how many did YOLO find?"*
 
-  $$ 
-  Recall = \frac{TP}{TP+FN}
-  $$
-
-  where FN = false negatives.
-
-  Suppose there are actually 100 plates in your validation images and YOLO finds 90:
-
-  $$
-  Recall = \frac{90}{100}=0.90
-  $$
-
-  So **90% recall**.
+  	$$Recall = \frac{TP}{TP+FN}$$
+  	
+	
+	where FN = false negatives.
+	
+	Suppose there are actually 100 plates in your validation images and YOLO finds 90:
+	
+	$$Recall = \frac{90}{100}=0.90$$
+	
+	So **90% recall**.
 
 - `metrics/mAP50(B)` / `metrics/mAP50(M)`
 
@@ -123,10 +116,7 @@ Because we are performing segmentation, each prediction has both a **bounding bo
   - The `50` means an IoU threshold of **0.50**.  
   - **Intersection over Union, IoU** measures overlap between the predicted and ground-truth regions:
 
-    $$
-    IoU =
-    \frac{\text{intersection}}{\text{union}}
-    $$
+    $$IoU = \frac{\text{intersection}}{\text{union}}$$
 
     For example:
 
@@ -176,15 +166,11 @@ Because we are performing segmentation, each prediction has both a **bounding bo
   - Generally, this is the **more demanding metric**.
   - Instead of evaluating only at:
 
-    $$
-    IoU=0.50
-    $$
+    $$IoU=0.50$$
 
     YOLO evaluates at multiple thresholds:
 
-    $$
-    0.50,\ 0.55,\ 0.60,\ ...,\ 0.95
-    $$
+    $$0.50,\ 0.55,\ 0.60,\ ...,\ 0.95$$
 
     and averages the resulting AP values.
 
