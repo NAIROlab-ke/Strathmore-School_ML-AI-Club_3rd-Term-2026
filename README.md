@@ -49,6 +49,10 @@
 - [**Training Dataset**](https://drive.google.com/file/d/1uKOIGeZ6PFYxYi8EhcTEtEzhnlm60L6O/view?usp=drive_link)
 - [**Inference test video**](https://drive.google.com/file/d/1-i0-HCXRVXVYQfk8T2LEo5Qb2AZBEgVc/view?usp=drive_link)
 - **Exercise:** Improve segmentation performance using the `epochs` hyperparameter
+
+*Assignment*
+
+- Based on [Understanding YOLO Training/Evaluation Results](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md), perform comparative analysis on the `results.png` of a 20 vs 50 epochs training ... SCIENCE!!
   
 ## 3. Keypoint / Pose Detection, Sep 17th
 
