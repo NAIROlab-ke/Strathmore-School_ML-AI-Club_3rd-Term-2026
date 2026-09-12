@@ -4,8 +4,8 @@
 - The Google Colab training output is stored in the `MyDrive` directory of your Google Drive under the name `output-TIMESTAMP.zip` (where `TIMESTAMP` is the form `YearMonthDay_HourMinSec`).
 - A **training/evaluation dashboard** for the YOLO instance segmentation model can be found in the file `train/content/runs/segment/train/results.png`. It contains two major categories for analysis:
 	
-	1. **Losses** → what the model is trying to minimize during training.
-	2. **Metrics** → how well the trained model actually performs on validation data.
+	* **Losses** → what the model is trying to minimize during training.
+	* **Metrics** → how well the trained model actually performs on validation data.
 
 ## 1. Losses
 
