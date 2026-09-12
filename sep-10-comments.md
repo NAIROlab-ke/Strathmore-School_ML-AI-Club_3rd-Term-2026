@@ -21,6 +21,7 @@
 	* **Metrics** → how well the trained model actually performs on **validation data**
 
 	After each epoch during YOLO training:
+
 	```
 	TRAINING
 	  train images
@@ -37,7 +38,8 @@
 	  calculate metrics
 	      ↓
 	  precision / recall / mAP
-	  ```
+
+ 	```
  
 - Recall that the YOLO dataset is split into `train`, `val`, and `test` sections:
 	- `train`: data/images actually used to **update the model weights** during training.
