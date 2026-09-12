@@ -52,7 +52,7 @@
 
 *Assignment*
 
-- Based on [Understanding YOLO Training/Evaluation Results](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md), perform comparative analysis on the `results.png` of a 20 vs 50 epochs training ... SCIENCE!!
+- Based on [Understanding YOLO Training/Evaluation Results](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md), perform a comparative analysis on the `results.png` of a 20 vs 50 epochs training ... SCIENCE!!
   
 ## 3. Keypoint / Pose Detection, Sep 17th
 
