@@ -212,7 +212,7 @@ Because we are performing segmentation, each prediction has both a **bounding bo
 
 ## 3. TL;DR
 
-Think of the structure of training/evaluation results as:
+Think of the structure of `results.png` as:
 
 ```text
                     YOLOv11-seg
