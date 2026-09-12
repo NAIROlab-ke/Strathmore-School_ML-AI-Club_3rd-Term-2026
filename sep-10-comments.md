@@ -20,7 +20,7 @@
 	* **Losses** → what the model is trying to minimize during training.
 	* **Metrics** → how well the trained model actually performs on validation data.
  
- * Just skip to Section **4. TL;DR** for a compact summary of Sections **2. Losses** and **3. Metrics** 
+ - JUST SKIP TO SECTION [**3. TL;DR**](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/edit/main/sep-10-comments.md#3-tldr) FOR A COMPACT SUMMARY OF SECTIONS [**1. Losses**](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/edit/main/sep-10-comments.md#1-losses) AND [**2. Metrics**](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/edit/main/sep-10-comments.md#2-metrics)
 
 ## 1. Losses
 
