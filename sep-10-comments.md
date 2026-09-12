@@ -15,11 +15,70 @@
 ## Intro/Background
 
 - The Google Colab Notebook training output is stored in the `MyDrive` directory of your Google Drive under the name `output-TIMESTAMP.zip` (where `TIMESTAMP` is the form `YearMonthDay_HourMinSec`).
-- A **training/evaluation dashboard** for the YOLO instance segmentation model can be found in the file `train/content/runs/segment/train/results.png`. It contains two major categories for analysis:
+- A **training/evaluation dashboard** for the YOLO instance segmentation model can be found in the file `train/content/runs/segment/train/results.png`. It contains two broad categories for analysis: **training/validation losses** and **validation performance metrics**
 	
-	* **Losses** → what the model is trying to minimize during training.
-	* **Metrics** → how well the trained model actually performs on validation data.
+	* **Losses** → what the model is trying to minimize during training (i.e. the **error**). Calculated from **both training and validation data**
+	* **Metrics** → how well the trained model actually performs on **validation data**
+
+	After each epoch during YOLO training:
+	```
+	TRAINING
+	  train images
+	      ↓
+	  forward pass → calculate losses
+	      ↓
+	  backpropagation → update weights
+	      ↓
+	VALIDATION
+	  val images
+	      ↓
+	  make predictions
+	      ↓
+	  calculate metrics
+	      ↓
+	  precision / recall / mAP
+	  ```
  
+- Recall that the YOLO dataset is split into `train`, `val`, and `test` sections:
+	- `train`: data/images actually used to **update the model weights** during training.
+	- `val`: data/images held out from weight updates and used to **evaluate the model during training, and typically after each epoch**. These results help **monitor convergence/overfitting** and can be used for **model selection/checkpointing**.
+	- `test`: a held-out set intended for **final, unbiased evaluation after training/model selection is finished.**
+
+	```
+	                    DATASET
+	                       │
+	          ┌────────────┼────────────┐
+	          ↓            ↓            ↓
+	       TRAIN          VAL          TEST
+	          │            │            │
+	          │            │            │
+	     update weights   evaluate    final evaluation
+	          │          every epoch    after training
+	          │            │            │
+	          └──────┬─────┘            │
+	                 ↓                  │
+	           choose/monitor           │
+	             model                  │
+	                 │                  │
+	                 └──────────────────┘
+	                         ↓
+	                  FINAL TEST RESULT
+	```
+	
+	where `choose/monitor model` --> `weights/{best.pt,last.pt}`
+	
+	```	
+	TRAIN
+	  ↓
+	train model
+	  ↓
+	VAL ← use this to make training/model decisions
+	  ↓
+	freeze model choice
+	  ↓
+	TEST ← evaluate once
+	```
+
  - **JUST SKIP TO SECTION [3. TL;DR](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md#3-tldr) FOR A COMPACT SUMMARY OF SECTIONS [1. Losses](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md#1-losses) AND [2. Metrics](https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/sep-10-comments.md#2-metrics)**
 
 ## 1. Losses
@@ -31,46 +90,6 @@
 	- `val/*` curves should generally **track** the `train/*` curves
 	- For instance, if a `val` curve starts to rise while `train` continues to drop, then it is a sign of **overfitting**
 
-### Training vs Evaluation
-- Recall the `train`, `val`, and `test` splits in the training data:
-	- `train`: data/images actually used to **update the model weights** during training.
-	- `val`: data/images held out from weight updates and used to **evaluate the model during training, and typically after each epoch**. These results help **monitor convergence/overfitting** and can be used for **model selection/checkpointing**.
-	- `test`: a held-out set intended for **final, unbiased evaluation after training/model selection is finished.**
-
-```
-                    DATASET
-                       │
-          ┌────────────┼────────────┐
-          ↓            ↓            ↓
-       TRAIN          VAL          TEST
-          │            │            │
-          │            │            │
-     update weights   evaluate    final evaluation
-          │          every epoch    after training
-          │            │            │
-          └──────┬─────┘            │
-                 ↓                  │
-           choose/monitor           │
-             model                  │
-                 │                  │
-                 └──────────────────┘
-                         ↓
-                  FINAL TEST RESULT
-```
-
-where `choose/monitor model` --> `weights/{best.pt,last.pt}`
-
-```	
-TRAIN
-  ↓
-train model
-  ↓
-VAL ← use this to make training/model decisions
-  ↓
-freeze model choice
-  ↓
-TEST ← evaluate once
-```
 ### Loss Plots
 
 - `train/box_loss` / `val/box_loss`: This measures how accurately YOLO predicts the bounding boxes around objects.
@@ -86,7 +105,6 @@ TEST ← evaluate once
 ## 2. Metrics
 
 Because we are performing segmentation, each prediction has both a **bounding box (B)** and a **mask (M)**.
-
 
 - `metrics/precision(B)` and `metrics/precision(M)`: Asks the question *"Of all the objects YOLO said were objects, how many were actually correct according to the B or M criterion?"*
 
