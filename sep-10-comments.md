@@ -4,11 +4,23 @@
 <img width="1136" height="574" alt="nairolab-github-banner-cropped" src="https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/nairolab-github-banner-cropped.png" />
 </div>
 
+## Table Of Contents
+
+1. Intro/Background
+2. Losses
+3. Metrics
+4. TL;DR
+5. Practical tips when reading `results.png`
+   
+## Intro/Background
+
 - The Google Colab training output is stored in the `MyDrive` directory of your Google Drive under the name `output-TIMESTAMP.zip` (where `TIMESTAMP` is the form `YearMonthDay_HourMinSec`).
 - A **training/evaluation dashboard** for the YOLO instance segmentation model can be found in the file `train/content/runs/segment/train/results.png`. It contains two major categories for analysis:
 	
 	* **Losses** → what the model is trying to minimize during training.
 	* **Metrics** → how well the trained model actually performs on validation data.
+ 
+ * Just skip to Section **4. TL;DR** for a compact summary of Sections **2. Losses** and **3. Metrics** 
 
 ## 1. Losses
 
