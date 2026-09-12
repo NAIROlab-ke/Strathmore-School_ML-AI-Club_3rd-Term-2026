@@ -1,5 +1,8 @@
 
-# Understanding YOLO Training/Evaluation Results
+<div align="center">
+<h1>Understanding YOLO Training/Evaluation Results</h1>
+<img width="1136" height="574" alt="nairolab-github-banner-cropped" src="https://github.com/NAIROlab-ke/Strathmore-School_ML-AI-Club_3rd-Term-2026/blob/main/nairolab-github-banner-cropped.png" />
+</div>
 
 - The Google Colab training output is stored in the `MyDrive` directory of your Google Drive under the name `output-TIMESTAMP.zip` (where `TIMESTAMP` is the form `YearMonthDay_HourMinSec`).
 - A **training/evaluation dashboard** for the YOLO instance segmentation model can be found in the file `train/content/runs/segment/train/results.png`. It contains two major categories for analysis:
