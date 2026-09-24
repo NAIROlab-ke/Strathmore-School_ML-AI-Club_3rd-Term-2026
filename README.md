@@ -74,6 +74,8 @@
 * Practical OCR pipeline
 * Introduction to vision-language models for document understanding
 
+**DETOR!** [LINK](https://drive.google.com/file/d/1bfH9Dn1MjE37u9j5J-94yAGii2RcT9B9/view?usp=drive_link)
+
 ## 5. Computer Vision with Raspberry Pi-based H/W for edge AI, Oct 1st
 
 **A hardware-focused session**
