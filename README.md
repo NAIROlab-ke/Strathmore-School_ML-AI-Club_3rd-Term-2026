@@ -74,8 +74,6 @@
 * Practical OCR pipeline
 * Introduction to vision-language models for document understanding
 
-**DETOUR!** [LINK](https://colab.research.google.com/drive/1bfH9Dn1MjE37u9j5J-94yAGii2RcT9B9)
-
 ## 5. Computer Vision with Raspberry Pi-based H/W for edge AI, Oct 1st
 
 **A hardware-focused session**
@@ -92,7 +90,7 @@
 * AI Accelerators
   * HAILO-8 (Pi AI HAT+) 
 <!-- This could culminate in a small experiment where students use different lenses/cameras and observe how **field of view, resolution and distance affect detection**. -->
-
+ 
 ## 6. Multimodal AI, Oct 8th/15th
 
 We make the transition from *computer vision models* to *models that reason about images and language*.
@@ -123,6 +121,22 @@ We make the transition from *computer vision models* to *models that reason abou
 * Visual question answering
 * Image-based assistants
 * Introduction to VLMs
+
+# BONUS: Applied LLM Series
+
+## A Tour of the Modern AI Stack (Sep 24th)
+- [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bfH9Dn1MjE37u9j5J-94yAGii2RcT9B9)
+
+## What is inside a ChatGPT? (Oct 1)
+- [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Cfjexha1-GhlI2NAKoCW0P0-hbVV7uC4)
+
+## Why do LLMs Hallucinate? (Oct 8)
+- [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1282oV3I0y7MJoC5g0uhpVZuHcbFNeIbV)
+
+## Chatbot to Agent (Oct 15)
+- [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1282oV3I0y7MJoC5g0uhpVZuHcbFNeIbV)
+
+
 
 <!--
 Comments:
