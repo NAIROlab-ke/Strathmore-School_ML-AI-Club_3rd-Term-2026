@@ -124,16 +124,16 @@ We make the transition from *computer vision models* to *models that reason abou
 
 # BONUS: Applied LLM Series
 
-## A Tour of the Modern AI Stack (Sep 24th)
+## 1. A Tour of the Modern AI Stack (Sep 24th)
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bfH9Dn1MjE37u9j5J-94yAGii2RcT9B9)
 
-## What is inside a ChatGPT? (Oct 1)
+## 2. What is inside a ChatGPT? (Oct 1)
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Cfjexha1-GhlI2NAKoCW0P0-hbVV7uC4)
 
-## Why do LLMs Hallucinate? (Oct 8)
+## 3. Why do LLMs Hallucinate? (Oct 8)
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1282oV3I0y7MJoC5g0uhpVZuHcbFNeIbV)
 
-## Chatbot to Agent (Oct 15)
+## 4. Chatbot to Agent (Oct 15)
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1282oV3I0y7MJoC5g0uhpVZuHcbFNeIbV)
 
 
