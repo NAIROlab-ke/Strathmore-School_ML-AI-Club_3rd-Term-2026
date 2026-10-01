@@ -122,7 +122,7 @@ We make the transition from *computer vision models* to *models that reason abou
 * Image-based assistants
 * Introduction to VLMs
 
-# BONUS: Applied LLM Series
+# BONUS TRACK: Applied LLM Series
 
 ## 1. A Tour of the Modern AI Stack (Sep 24th)
 - [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bfH9Dn1MjE37u9j5J-94yAGii2RcT9B9)
