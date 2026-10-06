@@ -88,7 +88,8 @@
     * Perspective
   * IMX500 Intelligent Vision Sensor (Pi AI Camera)
 * AI Accelerators
-  * HAILO-8 (Pi AI HAT+) 
+  * HAILO-8 (Pi AI HAT+)
+  * HAILO-10 (Pi AI HAT+2)
 <!-- This could culminate in a small experiment where students use different lenses/cameras and observe how **field of view, resolution and distance affect detection**. -->
  
 ## 6. Multimodal AI, Oct 8th/15th
